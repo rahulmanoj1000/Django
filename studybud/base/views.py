@@ -10,7 +10,7 @@ def home(request):
 
 def rooms(request,pk):
     room = Room.objects.get(id = pk)
-    context = {'rooms':room}
+    context = {'room': room}
     return render(request, 'base/room.html',context)
     
  
